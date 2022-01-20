@@ -8,7 +8,12 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['"Montserrat"', 'normal'],
+        'montserrat-alternates': ['"Montserrat Alternates"', 'normal'],
+      }
+    },
   },
   variants: {
     extend: {
