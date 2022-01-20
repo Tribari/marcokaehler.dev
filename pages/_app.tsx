@@ -1,12 +1,21 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import LayoutComponent from '@/components/layout'
+import generalData from './api/general.json'
+import mainMenuData from './api/mainmenu.json'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider defaultTheme='system' attribute='class'>
-      <LayoutComponent>
+      <LayoutComponent 
+        siteTitle={generalData.site_title} 
+        siteSlogan={generalData.site_slogan} 
+        metaTitle={generalData.meta_title}
+        metaDescription={generalData.meta_description}
+        metaKeywords={generalData.meta_keywords}
+        mainMenu={mainMenuData}
+        >
         <Component {...pageProps} />
       </LayoutComponent>
     </ThemeProvider>

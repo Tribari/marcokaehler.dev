@@ -1,11 +1,30 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
+import Head from 'next/head'
+import generalData from './api/general.json'
 
-const Home: NextPage = () => {
+type Props = {
+  metaTitle: string
+}
+
+const Home: NextPage<Props> = ({metaTitle}) => {
   return (
     <div>
-      <h1>Welcome home</h1>
+        <Head>
+            <title>{metaTitle}</title>
+        </Head>
+        <h1>Welcome home</h1>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async ({params}) => {
+
+  return {
+      props: {
+          metaTitle: 'Home | ' + generalData.meta_title,
+      },
+      revalidate: 60
+  }
 }
 
 export default Home
