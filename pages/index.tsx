@@ -12,7 +12,7 @@ const Home: NextPage<Props> = ({metaTitle}) => {
         <Head>
             <title>{metaTitle}</title>
         </Head>
-        <h1>Welcome home</h1>
+        <h1 className="text-3xl font-bold">Welcome home</h1>
     </div>
   )
 }

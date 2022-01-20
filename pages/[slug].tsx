@@ -20,7 +20,7 @@ const Page: NextPage<Props> = ({title, description, metaTitle, metaDescription, 
             <meta name="description" content={metaDescription}/>
             <meta name="keywords" content={metaKeywords}/>
         </Head>
-        <h1>{title}</h1>
+        <h1 className="text-3xl font-bold">{title}</h1>
         <p>{description}</p>
     </div>
   )

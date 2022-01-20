@@ -27,16 +27,16 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
             </Head>
             <div className="min-h-screen bg-gradient-to-tr from-blue-400 to-slate-100 dark:from-blue-900 dark:to-slate-800 ">
                 <div className="container mx-auto font-montserrat text-xl text-slate-900 dark:text-white bg-white dark:bg-slate-900">
-                    <header className="grid grid-cols-2 py-4 px-8 bg-slate-200 dark:bg-black">
+                    <header className="grid lg:grid-cols-2 py-4 px-8 bg-slate-200 dark:bg-black">
                         <div className="text-3xl font-montserrat-alternates">
                             {siteTitle}
                             <span className="block text-base font-montserrat uppercase text-blue-900 dark:text-blue-600">{siteSlogan}</span>
                         </div>
-                        <div className="text-right">
-                            <div className="inline pr-4">
+                        <div className="lg:text-right lg:pt-3">
+                            <div className="inline lg:pr-4">
                                 {mainMenu && mainMenu.map((item, index) => {
                                     return (
-                                        <span key={index} className="px-2">
+                                        <span key={index} className="pr-4">
                                             <Link href={item.url}>
                                                 {item.title}
                                             </Link>
