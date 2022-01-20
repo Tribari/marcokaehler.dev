@@ -18,7 +18,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
     return (
         <>
             <Head>
-                <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+                <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
                 <title>{metaTitle}</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />

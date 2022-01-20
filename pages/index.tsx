@@ -1,6 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import generalData from './api/general.json'
+import generalData from '../_settings/general.json'
 
 type Props = {
   metaTitle: string
