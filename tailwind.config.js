@@ -12,12 +12,13 @@ module.exports = {
       fontFamily: {
         'montserrat': ['"Montserrat"', 'normal'],
         'montserrat-alternates': ['"Montserrat Alternates"', 'normal'],
+        'vt323': ['"VT323"', 'normal'],
       }
     },
   },
   variants: {
     extend: {
-      display: ['responsive', 'dark']
+      display: ['responsive', 'swap']
     },
   },
   plugins: [],

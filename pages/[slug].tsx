@@ -1,5 +1,6 @@
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import {remark} from 'remark'
 import html from 'remark-html'
 import { getAllPageSlugs, getPageBySlug } from '@/lib/pages'
@@ -8,13 +9,13 @@ import generalData from '../_settings/general.json'
 type Props = {
     content: string,
     title: string,
-    description: string,
     metaTitle: string,
     metaDescription: string,
-    metaKeywords: string
+    metaKeywords: string,
+    imageUrl?: string
 }
 
-const Page: NextPage<Props> = ({content, title, description, metaTitle, metaDescription, metaKeywords}) => {
+const Page: NextPage<Props> = ({content, title, metaTitle, metaDescription, metaKeywords, imageUrl}) => {
   return (
     <div>
         <Head>
@@ -22,9 +23,20 @@ const Page: NextPage<Props> = ({content, title, description, metaTitle, metaDesc
             <meta name="description" content={metaDescription}/>
             <meta name="keywords" content={metaKeywords}/>
         </Head>
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <div className="my-2">
-            <div dangerouslySetInnerHTML={{ __html: content }}/>
+
+        {imageUrl &&
+            <div className="-m-12 mb-12">
+                <div className="relative w-full h-80">
+                    <Image src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
+                </div>
+            </div>
+        }
+
+        <h1 className="font-vt323 text-6xl font-light uppercase tracking-widest text-center text-transparent bg-clip-text bg-gradient-to-b from-fuchsia-600 to-teal-400">
+            {title}
+        </h1>
+        <div className="my-2 text-fuchsia-800 dark:text-teal-500">
+            <div className="markdown" dangerouslySetInnerHTML={{ __html: content }}/>
         </div>
     </div>
   )
@@ -36,11 +48,12 @@ export const getStaticProps: GetStaticProps = async ({params}: any) => {
     return {
         props: {
             content: result.toString(),
-            title: page.data.title,
+            title: '>>' + page.data.title + '<<',
             description: "",
-            metaTitle: page.data.metaTitle + ' | ' + generalData.meta_title,
+            metaTitle: (page.data.metaTitle ? page.data.metaTitle : page.data.title) + ' | ' + generalData.meta_title,
             metaDescription: page.data.metaDescription,
-            metaKeywords: page.data.metaKeywords
+            metaKeywords: page.data.metaKeywords,
+            imageUrl: page.data.imageUrl ? page.data.imageUrl : ''
         },
         revalidate: 60
     }
