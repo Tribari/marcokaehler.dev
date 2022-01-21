@@ -32,10 +32,10 @@ const Page: NextPage<Props> = ({content, title, metaTitle, metaDescription, meta
             </div>
         }
 
-        <h1 className="font-vt323 text-6xl font-light uppercase tracking-widest text-center text-transparent bg-clip-text bg-gradient-to-b from-fuchsia-600 to-teal-400">
+        <h1 className="font-vt323 text-6xl font-light uppercase tracking-widest text-center text-transparent bg-clip-text bg-gradient-to-b from-fuchsia-600 to-teal-400 transition-colors">
             {title}
         </h1>
-        <div className="my-2 text-fuchsia-800 dark:text-teal-500">
+        <div className="my-2 text-fuchsia-800 dark:text-teal-500 transition-colors">
             <div className="markdown" dangerouslySetInnerHTML={{ __html: content }}/>
         </div>
     </div>

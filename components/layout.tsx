@@ -25,9 +25,9 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                 <meta name="description" content={metaDescription}/>
                 <meta name="keywords" content={metaKeywords}/>
             </Head>
-            <div className="min-h-screen bg-gradient-to-tr from-blue-400 to-slate-100 dark:from-blue-900 dark:to-slate-800 ">
-                <div className="container mx-auto font-montserrat text-xl text-slate-900 dark:text-white bg-white dark:bg-slate-900">
-                    <header className="grid lg:grid-cols-2 py-6 px-12 bg-slate-200 dark:bg-black">
+            <div className="min-h-screen bg-gradient-to-tr from-blue-400 to-slate-100 dark:from-blue-900 dark:to-slate-800 transition-colors">
+                <div className="container mx-auto font-montserrat text-xl text-slate-900 dark:text-white bg-white dark:bg-slate-900 transition-colors">
+                    <header className="grid lg:grid-cols-2 py-6 px-12 bg-slate-200 dark:bg-black transition-colors">
                         <div className="text-3xl font-montserrat-alternates">
                             {siteTitle}
                             <span className="block text-base font-montserrat uppercase text-blue-900 dark:text-blue-600">{siteSlogan}</span>
@@ -52,7 +52,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                         {children}
                     </main>
 
-                    <footer className="py-4 px-12 text-sm text-center bg-slate-200 dark:bg-black">
+                    <footer className="py-4 px-12 text-sm text-center bg-slate-200 dark:bg-black transition-colors">
                         ©{currentYear} - {siteTitle}
                     </footer>
                 </div>

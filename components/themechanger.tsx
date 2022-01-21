@@ -11,19 +11,19 @@ const ThemeChanger = () => {
     if (!mounted) return null
 
     return (
-        <div className="inline-block p-2 rounded-full bg-white dark:bg-slate-800">
-            <div className="flex justify-center items-center gap-x-1">
-                <FaSun className="text-yellow-500 dark:text-gray-500"/>
-                <button onClick={() => setTheme('dark')} className="inline-block dark:hidden">
-                    <FaToggleOff/>
+        <div className="inline-block rounded-full bg-slate-300 dark:bg-slate-900">
+            <div className="flex justify-center items-center gap-x-2 p-1">
+                <button onClick={() => setTheme('light')} className="inline-block bg-white dark:bg-slate-900 rounded-full p-2">
+                    <FaSun className="text-yellow-500 dark:text-gray-500"/>
                 </button>
-                <button onClick={() => setTheme('light')} className="hidden dark:inline-block">
-                    <FaToggleOn/>
+                <button onClick={() => setTheme('dark')} className="inline-block bg-slate-300 dark:bg-slate-600 rounded-full p-2">
+                    <FaMoon className="text-black dark:text-yellow-100"/>
                 </button>
-                <FaMoon className="text-black dark:text-blue-500"/>
             </div>
         </div>
+
     )
+
 }
 
 export default ThemeChanger
