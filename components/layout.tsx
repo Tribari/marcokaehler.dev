@@ -26,17 +26,28 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                 <meta name="keywords" content={metaKeywords}/>
             </Head>
             <div className="min-h-screen bg-gradient-to-tr from-blue-400 to-slate-100 dark:from-blue-900 dark:to-slate-800 transition-colors">
-                <div className="container mx-auto font-montserrat text-xl text-slate-900 dark:text-white bg-white dark:bg-slate-900 transition-colors">
-                    <header className="grid lg:grid-cols-2 py-6 px-12 bg-slate-200 dark:bg-black transition-colors">
-                        <div className="text-3xl font-montserrat-alternates">
-                            {siteTitle}
-                            <span className="block text-base font-montserrat uppercase text-blue-900 dark:text-blue-600">{siteSlogan}</span>
+
+                <div className="container mx-auto font-montserrat text-xl text-slate-900 dark:text-white bg-white dark:bg-black transition-colors">
+                    
+                    <header className="sticky top-0 z-50 grid lg:grid-cols-2 py-6 px-12 bg-white dark:bg-black transition-colors">
+                        <div className="font-vt323 uppercase group transition-colors hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
+                            <div className="text-5xl">
+                                <Link href="/">
+                                    {siteTitle}
+                                </Link>
+                            </div>
+                            <div className="text-2xl">
+                                <Link href="/">
+                                    {siteSlogan}
+                                </Link>
+                            </div>
                         </div>
+
                         <div className="lg:text-right lg:pt-3">
                             <div className="inline lg:pr-4 font-vt323 text-3xl uppercase tracking-wide">
                                 {mainMenu && mainMenu.map((item, index) => {
                                     return (
-                                        <span key={index} className="pr-4 hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
+                                        <span key={index} className="pr-4 transition-colors hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
                                             <Link href={item.url}>
                                                 {item.title}
                                             </Link>
@@ -52,10 +63,12 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                         {children}
                     </main>
 
-                    <footer className="py-4 px-12 text-sm text-center bg-slate-200 dark:bg-black transition-colors">
+                    <footer className="py-4 px-12 text-md font-vt323 text-center uppercase bg-white dark:bg-black transition-colors">
                         ©{currentYear} - {siteTitle}
                     </footer>
+
                 </div>
+                
             </div>
         </>
     )

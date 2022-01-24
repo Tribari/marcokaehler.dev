@@ -1,27 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.markdown {
-    @apply text-lg leading-relaxed;
-  }
-  
-  .markdown p,
-  .markdown ul,
-  .markdown ol,
-  .markdown blockquote {
-    @apply my-4;
-  }
-  
-  .markdown h1 {
-    @apply text-4xl mt-12 mb-4 leading-snug;
-  }
 
-  .markdown h2 {
-    @apply text-3xl mt-12 mb-4 leading-snug;
-  }
-  
-  .markdown h3 {
-    @apply text-2xl mt-8 mb-4 leading-snug;
-  }
+.markdown {
+    @apply text-lg leading-relaxed
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+    @apply my-4
+}
+
+.markdown h1 {
+    @apply text-4xl mt-12 mb-4 leading-snug
+}
+
+.markdown h2 {
+    @apply text-3xl mt-12 mb-4 leading-snug
+}
+
+.markdown h3 {
+    @apply text-2xl mt-8 mb-4 leading-snug
+}
+
+dl {
+    @apply my-4 grid grid-cols-4
+}
+
+dl dt {
+    @apply uppercase mt-2
+}
+
+dl dd {
+    @apply col-span-3 mt-2
+}
+
+.card {
+    @apply p-12 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded-xl shadow-xl hover:scale-105 transform-gpu transition delay-150 duration-300 ease-in-out
+}
