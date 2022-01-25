@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useTheme } from 'next-themes'
 import { FaSun, FaMoon, FaToggleOn, FaToggleOff } from 'react-icons/fa'
 
-const ThemeChanger = () => {
+const ThemeChangerComponent = () => {
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
   
@@ -26,4 +26,4 @@ const ThemeChanger = () => {
 
 }
 
-export default ThemeChanger
+export default ThemeChangerComponent

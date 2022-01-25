@@ -27,18 +27,34 @@
     @apply text-2xl mt-8 mb-4 leading-snug
 }
 
-dl {
-    @apply my-4 grid grid-cols-4
-}
-
-dl dt {
-    @apply uppercase mt-2
-}
-
-dl dd {
-    @apply col-span-3 mt-2
-}
-
 .card {
     @apply p-12 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded-xl shadow-xl hover:scale-105 transform-gpu transition delay-150 duration-300 ease-in-out
+}
+
+.button {
+    @apply inline-block my-2 mr-4 px-6 py-2 transform-gpu transition duration-300 ease-in-out
+}
+
+.button-blue {
+    @apply button bg-sky-200 hover:bg-sky-300 dark:bg-sky-700 dark:hover:bg-sky-500 
+}
+
+.button-green {
+    @apply button bg-lime-200 hover:bg-lime-300 dark:bg-lime-700 dark:hover:bg-lime-500
+}
+
+.button-yellow {
+    @apply button bg-yellow-200 hover:bg-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-500
+}
+
+.button-red {
+    @apply button bg-red-200 hover:bg-red-400 dark:bg-red-800 dark:hover:bg-red-600
+}
+
+.button-purple {
+    @apply button bg-purple-200 hover:bg-purple-300 dark:bg-purple-700 dark:hover:bg-purple-500
+}
+
+.Typewriter {
+    @apply inline
 }

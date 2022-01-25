@@ -1,0 +1,310 @@
+{
+    "title": "Skills",
+    "groups": [
+        {
+            "title": "PERN / MERN stack Development",
+            "skills": [
+                {
+                    "title": "React",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "NEXT.js - React Framework",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "TypeScript",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Node.js",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Express.js - Node.js Framework",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Prisma ORM",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "PostgreSQL DB",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Mongo DB",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "LAMP stack Development",
+            "skills": [
+                {
+                    "title": "PHP",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Laravel - PHP Framework",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Symfony - PHP Framework",
+                    "knowledge": {
+                        "level": 1,
+                        "production": false,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Twig - PHP Template Engine",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "MySql DB",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "HTML Development",
+            "skills": [
+                {
+                    "title": "HTML",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Javascript",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "JQuery - Javascript Library",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "CSS",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "LESS / SASS - CSS Compiler",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Bootstrap - CSS Framework",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Uikit - CSS Framework",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Tailwind - CSS Framework",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "App / Mobile Development",
+            "skills": [
+                {
+                    "title": "C#",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Xamarin - C# Framework",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "C++",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "QT - C++ Framework",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Java",
+                    "knowledge": {
+                        "level": 1,
+                        "production": false,
+                        "upToDate": false
+                    }
+                }
+            ]
+        },
+        {
+            "title": "CMS Development",
+            "skills": [
+                {
+                    "title": "Wordpress - Installatioon & Administration",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Wordpress - Template Development",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Wordpress - Plugin Development",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Joomla - Installation & Administration",
+                    "knowledge": {
+                        "level": 5,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Joomla - Template Development",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Joomla - Extension Development",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "OctoberCMS - Installation & Administration",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Strapi - Installation & Administration",
+                    "knowledge": {
+                        "level": 3,
+                        "production": false,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Strapi - API frontend connection",
+                    "knowledge": {
+                        "level": 3,
+                        "production": false,
+                        "upToDate": true
+                    }
+                }
+            ]
+        }
+    ]
+}

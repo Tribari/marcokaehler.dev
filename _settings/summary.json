@@ -1,0 +1,82 @@
+{
+    "title": "Marco Kähler at a glance",
+    "birthday": "1983-12-11",
+    "status": {
+        "available": true,
+        "data": [
+            "for hire in part-time (60%)",
+            "for your next project"
+        ]
+    },
+    "portrait": {
+        "url": "/images/portrait.jpg",
+        "title": "Marco Kähler"
+    },
+    "informations": [
+        {
+            "title": "Profession",
+            "data": [
+                "Fullstack Developer (focus on Frontend)",
+                "Web & Graphic Designer",
+                "Partner at Internet Agency Kähler (society under civil law)"
+            ]
+        },
+        {
+            "title": "Education",
+            "data": [
+               "Computer Science Expert for Software Development (IHK)",
+               "Media Informatics (2 semesters at university of applied science)"
+            ]
+        },
+        {
+            "title": "Skillset",
+            "data": [
+                "NEXT.js Development (TypeScript, React, Node.js, Prisma ORM, PSQL-DB)",
+                "PHP Development (Vanilla PHP, Laravel, MySQL-DB, MongoDB)",
+                "CMS Development (Wordpress, Joomla, OctoberCMS, Strapi)",
+                "HTML Development (SCSS, Bootstrap-CSS, Tailwind-CSS, JQuery, Vanilla JS)",
+                "Mobile App Development Android & iOS (C# Xamarin-Framework)",
+                "Adobe Creative Suite (Photoshop, Illustrator, InDesign, XD)"
+            ]
+        },
+        {
+            "title": "Spoken languages",
+            "data": [
+                "German (native), English"
+            ]
+        },
+        {
+            "title": "Location",
+            "data": [
+                "City of Hanover, Lower Saxony, Germany"
+            ]
+        }
+    ],
+    "buttons": [
+        {
+            "text": "Hire me",
+            "class": "button-green",
+            "url": "#"
+        },
+        {
+            "text": "Download CV",
+            "class": "button-blue",
+            "url": "#"
+        },
+        {
+            "text": "My Skills",
+            "class": "button-yellow",
+            "url": "#"
+        },
+        {
+            "text": "Portfolio",
+            "class": "button-red",
+            "url": "#"
+        },
+        {
+            "text": "About me",
+            "class": "button-purple",
+            "url": "#"
+        }
+    ]
+}

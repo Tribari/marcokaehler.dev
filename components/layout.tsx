@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import ThemeChanger from './themechanger'
+import ThemeChangerComponent from './themechanger'
 
 type Props = {
     children: React.ReactNode,
@@ -55,7 +55,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                                     )
                                 })}
                             </div>
-                            <ThemeChanger/>
+                            <ThemeChangerComponent/>
                         </div>
                     </header>
                     
