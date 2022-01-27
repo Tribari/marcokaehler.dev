@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'montserrat': ['"Montserrat"', 'normal'],
+        'jost': ['"Jost"', 'normal'],
         'vt323': ['"VT323"', 'normal'],
       }
     },

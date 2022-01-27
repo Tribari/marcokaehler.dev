@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;1,300;1,500&family=VT323&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+h1, h2, h3, h4 {
+    @apply font-vt323 uppercase
+}
+
+h1 {
+    @apply text-6xl xl:text-8xl
+}
+
+h2 {
+    @apply text-4xl xl:text-6xl
+}
+
+h3 {
+    @apply text-2xl xl:text-4xl
+}
+
+h4 {
+    @apply text-xl  xl:text-2xl
+}
+
+.jost {
+    @apply font-jost text-base leading-7 tracking-wide font-thin
+}
+
 .markdown {
-    @apply text-lg leading-relaxed
+    @apply leading-relaxed
 }
 
 .markdown p,
@@ -27,8 +51,20 @@
     @apply text-2xl mt-8 mb-4 leading-snug
 }
 
+.markdown strong {
+    @apply font-bold
+}
+
+.markdown blockquote {
+    @apply p-4 italic border-l-4 border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900
+}
+
 .card {
     @apply p-12 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded-xl shadow-xl hover:scale-105 transform-gpu transition delay-150 duration-300 ease-in-out
+}
+
+.tooltip {
+    @apply absolute hidden group-hover:block z-50 py-1 px-2 rounded-lg -translate-x-1/2 -translate-y-1/2
 }
 
 .button {

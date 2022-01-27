@@ -2,10 +2,10 @@
     "title": "Skills",
     "groups": [
         {
-            "title": "PERN / MERN stack Development",
+            "title": "JAM / PERN / MERN stack Development",
             "skills": [
                 {
-                    "title": "React",
+                    "title": "React.js",
                     "knowledge": {
                         "level": 3,
                         "production": true,
@@ -13,7 +13,7 @@
                     }
                 },
                 {
-                    "title": "NEXT.js - React Framework",
+                    "title": "NEXT.js - Static Site Generator React Framework",
                     "knowledge": {
                         "level": 4,
                         "production": true,
@@ -67,6 +67,22 @@
                         "production": false,
                         "upToDate": true
                     }
+                },
+                {
+                    "title": "API Design & Development",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Markdown - Markup Language",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
                 }
             ]
         },
@@ -76,7 +92,7 @@
                 {
                     "title": "PHP",
                     "knowledge": {
-                        "level": 5,
+                        "level": 4,
                         "production": true,
                         "upToDate": true
                     }
@@ -84,9 +100,9 @@
                 {
                     "title": "Laravel - PHP Framework",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
-                        "upToDate": false
+                        "upToDate": true
                     }
                 },
                 {
@@ -108,7 +124,7 @@
                 {
                     "title": "MySql DB",
                     "knowledge": {
-                        "level": 5,
+                        "level": 4,
                         "production": true,
                         "upToDate": true
                     }
@@ -129,7 +145,7 @@
                 {
                     "title": "Javascript",
                     "knowledge": {
-                        "level": 4,
+                        "level": 3,
                         "production": true,
                         "upToDate": true
                     }
@@ -192,7 +208,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": false
+                        "upToDate": true
                     }
                 },
                 {
@@ -200,13 +216,13 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": false
+                        "upToDate": true
                     }
                 },
                 {
                     "title": "C++",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
                         "upToDate": false
                     }
@@ -215,7 +231,7 @@
                     "title": "QT - C++ Framework",
                     "knowledge": {
                         "level": 2,
-                        "production": false,
+                        "production": true,
                         "upToDate": false
                     }
                 },
@@ -226,6 +242,14 @@
                         "production": false,
                         "upToDate": false
                     }
+                },
+                {
+                    "title": "App Store Publishing (Play Store, App Store)",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
                 }
             ]
         },
@@ -233,7 +257,7 @@
             "title": "CMS Development",
             "skills": [
                 {
-                    "title": "Wordpress - Installatioon & Administration",
+                    "title": "Wordpress - Installation & Administration",
                     "knowledge": {
                         "level": 5,
                         "production": true,
@@ -289,6 +313,14 @@
                     }
                 },
                 {
+                    "title": "OctoberCMS - Template Development",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
                     "title": "Strapi - Installation & Administration",
                     "knowledge": {
                         "level": 3,
@@ -301,6 +333,165 @@
                     "knowledge": {
                         "level": 3,
                         "production": false,
+                        "upToDate": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Design",
+            "skills": [
+                {
+                    "title": "Adobe Photoshop",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Adobe Illustrator",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Adobe Indesign",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Adobe Lightroom",
+                    "knowledge": {
+                        "level": 1,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Adobe XD",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Web design",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Logo design",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Print design",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Project Management",
+            "skills": [
+                {
+                    "title": "JIRA",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "MS Project",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Requirement Management",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Project Management",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                },
+                {
+                    "title": "Agile Development",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "SCRUM",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": false
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Tools",
+            "skills": [
+                {
+                    "title": "Version control systems (Git, SVN)",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Code editors (VS Code, Eclipse, PHPStorm, Atom)",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "Postman (API testing)",
+                    "knowledge": {
+                        "level": 4,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
+                    "title": "MS Office Suite (ECDL)",
+                    "knowledge": {
+                        "level": 3,
+                        "production": true,
                         "upToDate": true
                     }
                 }

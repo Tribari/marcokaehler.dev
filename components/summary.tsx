@@ -31,43 +31,45 @@ const SummaryComponent = ({summary}: Props) => {
     const age = Math.floor(((new Date()).valueOf() - (new Date(summary.birthday)).valueOf()) / 31557600000)
 
     return (
-        <div className="font-vt323 grid grid-cols-1 lg:grid-cols-3 lg:gap-36">
+        <div className="">
 
-            <div className="text-center">
-                <div className="relative p-2 border-2 border-black dark:border-white rounded-full shadow-xl">
-                    <Image 
-                    className="rounded-full"
-                    src={summary.portrait.url} 
-                    alt={summary.portrait.title} 
-                    layout="responsive" 
-                    width="400" 
-                    height="400" 
-                    objectFit="cover" 
-                    loading="eager" 
-                    priority/>
+            {summary.portrait.url &&
+                <div className="mx-44 mb-24 text-center">
+                    <div className="relative p-2 border-2 border-black dark:border-white rounded-full shadow-xl">
+                        <Image 
+                        className="rounded-full"
+                        src={summary.portrait.url} 
+                        alt={summary.portrait.title} 
+                        layout="responsive" 
+                        width="400" 
+                        height="400" 
+                        objectFit="cover" 
+                        loading="eager" 
+                        priority/>
+                    </div>
                 </div>
-            </div>
+            }
 
-            <div className="col-span-2">
-                <h1 className="text-6xl uppercase">
+            <div className="">
+                <h2>
                     {summary.title} 
-                </h1>
+                </h2>
                 <div className="py-4">
-                    <div className="my-1 grid grid-cols-4">
+                    <div className="my-2 grid grid-cols-4">
                         <div className="uppercase">
                             Age
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-3 jost">
                             {age} years and counting
                         </div>
                     </div>
                     {summary.informations && summary.informations.map((entry, index) => {
                         return (
-                            <div key={index} className="my-1 grid grid-cols-4">
+                            <div key={index} className="my-2 grid grid-cols-4">
                                 <div className="uppercase">
                                     {entry.title}
                                 </div>
-                                <div className="col-span-3">
+                                <div className="col-span-3 jost">
                                     {entry.data.map((i, k) => {
                                         return (
                                             <p key={k}>{i}</p>
@@ -77,11 +79,11 @@ const SummaryComponent = ({summary}: Props) => {
                             </div>
                         )
                     })}
-                    <div className="my-1 grid grid-cols-4">
+                    <div className="my-2 grid grid-cols-4">
                         <div className="uppercase">
                             Status
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-3 ">
                             {summary.status.available && 
                                 <span className="bg-lime-200 dark:bg-lime-700 px-2">Available</span>
                             }

@@ -9,7 +9,7 @@
         ]
     },
     "portrait": {
-        "url": "/images/portrait.jpg",
+        "url": "",
         "title": "Marco Kähler"
     },
     "informations": [
@@ -29,13 +29,19 @@
             ]
         },
         {
+            "title": "Experience",
+            "data": [
+               "More than 10 years of experience as in different fields"
+            ]
+        },
+        {
             "title": "Skillset",
             "data": [
-                "NEXT.js Development (TypeScript, React, Node.js, Prisma ORM, PSQL-DB)",
+                "NEXT.js Development (TypeScript, React.js, Node.js, Prisma ORM, PSQL-DB)",
                 "PHP Development (Vanilla PHP, Laravel, MySQL-DB, MongoDB)",
                 "CMS Development (Wordpress, Joomla, OctoberCMS, Strapi)",
                 "HTML Development (SCSS, Bootstrap-CSS, Tailwind-CSS, JQuery, Vanilla JS)",
-                "Mobile App Development Android & iOS (C# Xamarin-Framework)",
+                "Mobile App Development Android & iOS (C#, Xamarin-Framework)",
                 "Adobe Creative Suite (Photoshop, Illustrator, InDesign, XD)"
             ]
         },
