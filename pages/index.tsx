@@ -9,6 +9,7 @@ import summaryData from '../_frontpage/summary.json'
 import skillsData from '../_frontpage/skills.json'
 import aboutData from '../_frontpage/about.json'
 import careerData from '../_frontpage/career.json'
+import LaunchIcon from '@/components/icons/launch'
 
 type Props = {
   metaTitle: string,
@@ -25,8 +26,13 @@ const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career}: Prop
             <title>{metaTitle}</title>
         </Head>
 
-        <div className="lg:pb-16 lg:px-16 xl:pb-24 xl:px-80">
-          <SummaryComponent summary={summary}/>
+        <div className="lg:pb-16 xl:pb-24 grid grid-cols-1 xl:grid-cols-3 lg:gap-24">
+          <div className="flex flex-col justify-center ">
+              <LaunchIcon/>
+          </div>
+          <div className="lg:col-span-2">
+            <SummaryComponent summary={summary}/>
+          </div>
         </div>
 
         <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
