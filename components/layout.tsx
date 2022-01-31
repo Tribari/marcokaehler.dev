@@ -29,7 +29,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
 
                 <div className="container mx-auto font-vt323 text-xl text-slate-900 dark:text-white bg-white dark:bg-black transition-colors">
                     
-                    <header className="sticky top-0 z-50 grid lg:grid-cols-2 py-6 px-12 bg-white dark:bg-black transition-colors">
+                    <header className="sticky top-0 z-10 grid lg:grid-cols-2 py-6 px-12 bg-white dark:bg-black transition-colors">
                         <div className="uppercase group transition-colors hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
                             <div className="text-5xl">
                                 <Link href="/">

@@ -7,19 +7,21 @@ import {remark} from 'remark'
 import html from 'remark-html'
 import { FaExternalLinkAlt } from "react-icons/fa"
 import generalData from '../../_settings/general.json'
+import GalleryComponent from '@/components/gallery'
 
 
 type Props = {
     content: string,
     title: string,
     url: string,
+    imageUrl?: string,
+    images?: string[],
     metaTitle: string,
     metaDescription: string,
-    metaKeywords: string,
-    imageUrl?: string
+    metaKeywords: string
 }
 
-const Portfolio: NextPage<Props> = ({content, title, url, metaTitle, metaDescription, metaKeywords, imageUrl}) => {
+const Portfolio: NextPage<Props> = ({content, title, url, metaTitle, metaDescription, metaKeywords, imageUrl, images}) => {
   return (
     <div>
         <Head>
@@ -38,6 +40,9 @@ const Portfolio: NextPage<Props> = ({content, title, url, metaTitle, metaDescrip
                     <div className="relative w-full h-80 lg:h-40 xl:h-80">
                         <Image src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
                     </div>
+                }
+                {images && 
+                    <GalleryComponent images={images}/>
                 }
                 <p className="text-right">
                     <Link href={url}>
@@ -69,7 +74,8 @@ export const getStaticProps: GetStaticProps = async ({params}: any) => {
             metaTitle: (portfolio.data.metaTitle ? portfolio.data.metaTitle : portfolio.data.title) + ' | ' + generalData.meta_title,
             metaDescription: portfolio.data.metaDescription,
             metaKeywords: portfolio.data.metaKeywords,
-            imageUrl: portfolio.data.imageUrl ? portfolio.data.imageUrl : ''
+            imageUrl: portfolio.data.imageUrl ? portfolio.data.imageUrl : '',
+            images: portfolio.gallery ? portfolio.gallery : ''
         }
     }
 }
