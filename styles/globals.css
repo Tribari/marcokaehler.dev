@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;1,300;1,500&family=VT323&display=swap');
+@font-face{
+    font-family: "VT323";
+    src: url("/assets/fonts/VT323/VT323-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Jost";
+    src: url("/assets/fonts/Jost/static/Jost-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Jost";
+    src: url("/assets/fonts/Jost/static/Jost-Medium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Jost";
+    src: url("/assets/fonts/Jost/static/Jost-LightItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic, oblique;
+}
+
+@font-face{
+    font-family: "Jost";
+    src: url("/assets/fonts/Jost/static/Jost-MediumItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
