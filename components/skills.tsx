@@ -1,4 +1,4 @@
-import { FaStar, FaRegStar, FaCheckCircle, FaAngleDown, FaAngleRight, FaRegBuilding, FaBookmark } from "react-icons/fa"
+import { FaStar, FaRegStar, FaAngleDown, FaAngleRight, FaRegBuilding, FaBookmark } from "react-icons/fa"
 import { useState } from 'react'
 
 export type Skills = {

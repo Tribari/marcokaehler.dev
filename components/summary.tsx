@@ -105,7 +105,7 @@ const SummaryComponent = ({summary}: Props) => {
                 <p className="py-4">
                     {summary.buttons && summary.buttons.map((button, index) => {
                         return (
-                            <a key={index} className={button.class} href={button.url}>
+                            <a key={index} className={button.class+' my-2 mr-2 '} href={button.url}>
                                 {button.text}
                             </a>
                         )
