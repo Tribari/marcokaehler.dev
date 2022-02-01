@@ -28,6 +28,11 @@ export function getPortfolioBySlug(slug: string){
 }
 
 export function getGalleryImages(path: string) {
-    const images = fs.readdirSync(imagesDirectory+path)
+    const files = fs.readdirSync(imagesDirectory+path)
+    const images = files.filter((file) => isFileImage(file))
     return images.map((image) => (path+image))
+}
+
+function isFileImage(file: string) {
+    return (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(file)
 }

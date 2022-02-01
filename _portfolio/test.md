@@ -1,17 +1,28 @@
 ---
-title: 'Test'
-metaTitle: 'Test'
-metaDescription: ''
-metaKeywords: ''
-imageUrl: '/images/alex-knight-958bi4L1N9s-unsplash.jpg'
-introduction: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
-url: '#'
-gallery: '/images/'
+title: 'IFarlink'
+metaTitle: 'Project IFARlink'
+metaDescription: 'IFARlink is a network for IFAR members and associated universities in aviation research.'
+metaKeywords: 'IFARlink, Project description, Development'
+imageUrl: '/images/ifarlink.jpeg'
+introduction: 'IFARlink is a network for IFAR members and associated universities in aviation research. On behalf of the DLR (German Aerospace Center) a social network based on a Joomla installation was created.'
+url: 'https://www.ifarlink.aero/'
+gallery: '/images/ifarlink/'
 ---
-## Heading
+## Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+On behalf of the DLR (German Aerospace Center) a social network based on a Joomla installation was created. The system will continue to be managed and administered. Regular web meetings with people from DLR, NASA, JAXA, and other IFAR members coordinate the further development.
 
-### Heading
+I administrate all the parts of the page (hosting, layout,functionality). Development, implementation and further changes are all done by myself.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+In january 2017 I have published the first mobile application for IFARlink. It can be downloaded for Android and IOS.
+
+## Used skills
+
+* Joomla Installation and Administration
+* Joomla Template- and Component-Development
+* PHP for individual requirements like technology database development
+* MySQL for Joomla and individual requirements
+* JQuery for individual requirements
+* API-Development for App-Access
+* App-Development with C# & Xamarin
+

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaPlusCircle, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 type Props = {
@@ -11,10 +11,6 @@ const GalleryComponent = ({images}: Props) => {
     const [image, setImage] = useState('')
     const [curIndex, setCurIndex] = useState(0)
 
-    useEffect(() => {
-        setImage(images[curIndex])
-    }, [curIndex])
-
     const previousImage = () => {
         curIndex - 1 < 0 ? setCurIndex(images.length - 1) : setCurIndex(curIndex-1)
     }
@@ -22,6 +18,24 @@ const GalleryComponent = ({images}: Props) => {
     const nextImage = () => {
         curIndex + 1 > images.length - 1 ? setCurIndex(0) : setCurIndex(curIndex+1)
     }
+
+    const checkKeyPress = (e: KeyboardEvent) => {
+        const { key } = e;
+        key === "ArrowRight" ? nextImage() : null
+        key === "ArrowLeft" ? previousImage() : null
+        key === "Escape" ? setShowFull(false) : null
+    }
+
+    useEffect(()=>{
+        window.addEventListener("keydown", checkKeyPress)
+        return ()=>{
+            window.removeEventListener("keydown", checkKeyPress)
+        }
+    })
+
+    useEffect(() => {
+        setImage(images[curIndex])
+    }, [curIndex])
 
     const gallery = images.map((image, index) => {
 
@@ -31,8 +45,8 @@ const GalleryComponent = ({images}: Props) => {
         }
 
         return (
-            <div key={index} className="relative flex-none w-1/4 cursor-pointer" onClick={() => showImage()}>
-                <div className="relative h-28">
+            <div key={index} className="relative flex-none w-1/2 md:w-1/4 lg:w-1/2 xl:w-1/4 cursor-pointer" onClick={() => showImage()}>
+                <div className="relative h-40 sm:h-60 md:h-40 lg:h-44 xl:h-28">
                     <Image src={image} alt="" layout="fill" objectFit="cover" loading="eager" priority/>
                 </div>
                 <div className="absolute inset-0 align-middle text-center bg-lime-200 dark:bg-lime-700 opacity-0 hover:opacity-90 transition-opacity duration-500">

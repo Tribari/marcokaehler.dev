@@ -44,9 +44,9 @@ const Portfolio: NextPage<Props> = ({content, title, url, metaTitle, metaDescrip
                 {images && 
                     <GalleryComponent images={images}/>
                 }
-                <p className="text-right">
+                <p className="text-right mt-4">
                     <Link href={url}>
-                        <a target="_blank" className="button-blue my-4">
+                        <a target="_blank" className="button-blue mb-4">
                             <FaExternalLinkAlt className="inline text-sm -mt-1"/> Visit Project
                         </a>
                     </Link>

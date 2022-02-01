@@ -2,32 +2,35 @@
     font-family: "VT323";
     src: url("/assets/fonts/VT323/VT323-Regular.ttf") format("truetype");
     font-display: swap;
+    font-style: normal;
 }
 
 @font-face{
     font-family: "Jost";
     src: url("/assets/fonts/Jost/static/Jost-Light.ttf") format("truetype");
     font-weight: normal;
+    font-style: normal;
 }
 
 @font-face{
     font-family: "Jost";
     src: url("/assets/fonts/Jost/static/Jost-Medium.ttf") format("truetype");
     font-weight: bold;
+    font-style: normal;
 }
 
 @font-face{
     font-family: "Jost";
     src: url("/assets/fonts/Jost/static/Jost-LightItalic.ttf") format("truetype");
     font-weight: normal;
-    font-style: italic, oblique;
+    font-style: italic;
 }
 
 @font-face{
     font-family: "Jost";
     src: url("/assets/fonts/Jost/static/Jost-MediumItalic.ttf") format("truetype");
     font-weight: bold;
-    font-style: italic, oblique;
+    font-style: italic;
 }
 
 @tailwind base;
@@ -56,7 +59,7 @@ h4 {
 }
 
 .jost {
-    @apply font-jost text-base leading-7 tracking-wide font-thin
+    @apply font-jost text-base leading-7 tracking-wide font-thin 
 }
 
 .markdown {
@@ -68,6 +71,10 @@ h4 {
 .markdown ol,
 .markdown blockquote {
     @apply my-4
+}
+
+.markdown ul {
+    @apply list-disc ml-4
 }
 
 .markdown strong {
