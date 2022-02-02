@@ -12,7 +12,7 @@ export function getAllPortfolioSlugs() {
 
 export function getAllPortfolio() {
     const slugs = getAllPortfolioSlugs()
-    return slugs.map( (slug) => ( getPortfolioBySlug(slug) ) )
+    return JSON.parse(JSON.stringify( slugs.map( (slug) => ( getPortfolioBySlug(slug) ) ) ))
 }
 
 export function getPortfolioBySlug(slug: string){

@@ -59,7 +59,7 @@ h4 {
 }
 
 .jost {
-    @apply font-jost text-base leading-7 tracking-wide font-thin 
+    @apply font-jost text-base leading-7 tracking-wide 
 }
 
 .markdown {
