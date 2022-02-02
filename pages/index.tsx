@@ -3,23 +3,21 @@ import SkillsComponent, {Skills} from '@/components/skills'
 import AboutComponent, {About} from '@/components/about'
 import CareerComponent, {Career} from '@/components/career'
 import PortfolioComponent, { Portfolio } from '@/components/portfolio'
-import type { NextPage, GetStaticProps } from 'next'
-import Head from 'next/head'
 import { getAllPortfolio } from '@/lib/portfolio'
 import { getAllCareer } from '@/lib/career'
+import { getAllAbout } from '@/lib/about'
+import type { NextPage, GetStaticProps } from 'next'
+import Head from 'next/head'
 import generalData from '../_settings/general.json'
 import summaryData from '../_frontpage/summary.json'
 import skillsData from '../_frontpage/skills.json'
-import aboutData from '../_frontpage/about.json'
 import LaunchIcon from '@/components/icons/launch'
-
-
 
 type Props = {
   metaTitle: string,
   summary: Summary,
   skills: Skills,
-  about: About,
+  about: About[],
   career: Career[],
   portfolio: Portfolio[]
 }
@@ -69,13 +67,14 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 
   const portfolio = getAllPortfolio()
   const career = getAllCareer()
+  const about = await getAllAbout()
 
   return {
       props: {
           metaTitle: 'Home | ' + generalData.meta_title,
           summary: summaryData,
           skills: skillsData,
-          about: aboutData,
+          about: about,
           career: career,
           portfolio: portfolio
       }
