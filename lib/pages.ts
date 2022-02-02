@@ -2,7 +2,7 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const pagesDirectory = join(process.cwd(), '_pages')
+const pagesDirectory = join(process.cwd(), 'data/pages')
 
 export function getAllPageSlugs() {
     const files =  fs.readdirSync(pagesDirectory)

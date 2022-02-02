@@ -2,8 +2,8 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import LayoutComponent from '@/components/layout'
-import generalData from '../_settings/general.json'
-import mainMenuData from '../_settings/mainmenu.json'
+import generalData from '@/data/general.json'
+import mainMenuData from '@/data/mainmenu.json'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

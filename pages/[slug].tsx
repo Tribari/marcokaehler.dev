@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {remark} from 'remark'
 import html from 'remark-html'
 import { getAllPageSlugs, getPageBySlug } from '@/lib/pages'
-import generalData from '../_settings/general.json'
+import generalData from '@/data/general.json'
 
 type Props = {
     content: string,

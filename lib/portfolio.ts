@@ -2,7 +2,7 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const portfolioDirectory = join(process.cwd(), '_portfolio')
+const portfolioDirectory = join(process.cwd(), 'data/portfolio')
 const imagesDirectory = join(process.cwd(), 'public')
 
 export function getAllPortfolioSlugs() {

@@ -3,15 +3,16 @@ import SkillsComponent, {Skills} from '@/components/skills'
 import AboutComponent, {About} from '@/components/about'
 import CareerComponent, {Career} from '@/components/career'
 import PortfolioComponent, { Portfolio } from '@/components/portfolio'
+import LaunchIcon from '@/components/icons/launch'
 import { getAllPortfolio } from '@/lib/portfolio'
 import { getAllCareer } from '@/lib/career'
 import { getAllAbout } from '@/lib/about'
 import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import generalData from '../_settings/general.json'
-import summaryData from '../_frontpage/summary.json'
-import skillsData from '../_frontpage/skills.json'
-import LaunchIcon from '@/components/icons/launch'
+import generalData from '@/data/general.json'
+import summaryData from '@/data/summary.json'
+import skillsData from '@/data/skills.json'
+
 
 type Props = {
   metaTitle: string,
@@ -52,12 +53,6 @@ const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career, portf
 
         <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
           <PortfolioComponent portfolio={portfolio}/>
-        </div>
-
-        <div className="my-2 text-fuchsia-800 dark:text-teal-500 transition-colors">
-            <div className="markdown">
-              
-            </div>
         </div>
     </div>
   )

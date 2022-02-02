@@ -2,7 +2,7 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const careerDirectory = join(process.cwd(), '_career')
+const careerDirectory = join(process.cwd(), 'data/career')
 
 export function getAllCareerSlugs() {
     const files =  fs.readdirSync(careerDirectory)

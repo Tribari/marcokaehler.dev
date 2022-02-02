@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import {remark} from 'remark'
 import html from 'remark-html'
 
-const aboutDirectory = join(process.cwd(), '_about')
+const aboutDirectory = join(process.cwd(), 'data/about')
 
 export function getAllAboutSlugs() {
     const files =  fs.readdirSync(aboutDirectory)
