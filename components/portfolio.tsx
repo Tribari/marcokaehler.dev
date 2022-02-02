@@ -39,7 +39,7 @@ const PortfolioComponent = ({portfolio}: Props) => {
                         <p className="pt-4 text-right">
                             <Link href={'/portfolio/'+item.slug}>
                                 <a className="uppercase p-4 -mr-4">
-                                    <FaAngleRight className="inline -mt-1"/> Read more
+                                    <FaAngleRight className="inline -mt-1"/> Visit Portfolio
                                 </a>
                             </Link>
                         </p>

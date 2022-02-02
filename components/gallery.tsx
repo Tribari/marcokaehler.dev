@@ -8,15 +8,16 @@ type Props = {
 
 const GalleryComponent = ({images}: Props) => {
     const [showFull, setShowFull] = useState(false)
+    const [imageList, setImageList] = useState(images)
     const [image, setImage] = useState('')
     const [curIndex, setCurIndex] = useState(0)
 
     const previousImage = () => {
-        curIndex - 1 < 0 ? setCurIndex(images.length - 1) : setCurIndex(curIndex-1)
+        curIndex - 1 < 0 ? setCurIndex(imageList.length - 1) : setCurIndex(curIndex-1)
     }
 
     const nextImage = () => {
-        curIndex + 1 > images.length - 1 ? setCurIndex(0) : setCurIndex(curIndex+1)
+        curIndex + 1 > imageList.length - 1 ? setCurIndex(0) : setCurIndex(curIndex+1)
     }
 
     const checkKeyPress = (e: KeyboardEvent) => {
@@ -34,10 +35,10 @@ const GalleryComponent = ({images}: Props) => {
     })
 
     useEffect(() => {
-        setImage(images[curIndex])
-    }, [curIndex])
+        setImage(imageList[curIndex])
+    }, [curIndex, imageList])
 
-    const gallery = images.map((image, index) => {
+    const gallery = imageList.map((image, index) => {
 
         const showImage = () => {
             setCurIndex(index)

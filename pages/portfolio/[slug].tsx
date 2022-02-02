@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {remark} from 'remark'
 import html from 'remark-html'
 import { FaExternalLinkAlt } from "react-icons/fa"
-import generalData from '../../_settings/general.json'
+import generalData from '@/data/general.json'
 import GalleryComponent from '@/components/gallery'
 
 

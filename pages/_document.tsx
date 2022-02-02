@@ -5,7 +5,7 @@ class Document extends NextDocument {
 
   render() {
     return (
-      <Html lang="en_EN">
+      <Html lang="en-EN">
         <Head />
         <body>
           <Main />
