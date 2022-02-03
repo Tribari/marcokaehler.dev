@@ -64,7 +64,9 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                     </main>
 
                     <footer className="py-4 px-12 text-md text-center uppercase bg-white dark:bg-black transition-colors">
-                        ©{currentYear} - {siteTitle}
+                        <span className="mx-4">
+                            ©{currentYear} - <Link href="/">{siteTitle}</Link> - <Link href="/imprint">Imprint</Link> - <Link href="/privacy">Privacy</Link>
+                        </span>
                     </footer>
 
                 </div>

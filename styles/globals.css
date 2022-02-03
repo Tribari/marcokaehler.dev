@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    @apply text-6xl xl:text-8xl
+    @apply text-6xl xl:text-7xl
 }
 
 h2 {

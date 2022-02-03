@@ -30,30 +30,30 @@ const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career, portf
             <title>{metaTitle}</title>
         </Head>
 
-        <div className="lg:pb-16 xl:pb-24 grid grid-cols-1 xl:grid-cols-3 lg:gap-24">
+        <section className="lg:pb-16 xl:pb-24 grid grid-cols-1 xl:grid-cols-3 lg:gap-24">
           <div className="flex flex-col justify-center ">
               <LaunchIcon/>
           </div>
           <div className="lg:col-span-2">
             <SummaryComponent summary={summary}/>
           </div>
-        </div>
+        </section>
 
-        <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
+        <section id="about" className="py-36 lg:px-16 xl:px-80">
           <AboutComponent about={about}/>
-        </div>
+        </section>
 
-        <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
+        <section id="skills" className="py-36 lg:px-16 xl:px-80">
           <SkillsComponent skills={skills}/>
-        </div>
+        </section>
 
-        <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
+        <section id="career" className="py-36 lg:px-16 xl:px-80">
           <CareerComponent career={career}/>
-        </div>
+        </section>
 
-        <div className="lg:pb-16 lg:px-16 xl:py-24 xl:px-80">
+        <section id="portfolio" className="py-36 lg:px-16 xl:px-80">
           <PortfolioComponent portfolio={portfolio}/>
-        </div>
+        </section>
     </div>
   )
 }

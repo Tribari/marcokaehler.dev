@@ -6,4 +6,4 @@ location: 'Brunswick, Germany'
 from: 'Sept 2005'
 to: 'Jan 2008'
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+After I finished school, I did an apprenticeship as an Computer Science Expert fpor Software Development at Siemens AG. The training was carried out within the company and also partly at the vocational school. After two and a half year I was able to graduate and thus also succumbed to my technical college entrance qualification.

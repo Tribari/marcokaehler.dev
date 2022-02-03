@@ -6,4 +6,4 @@ location: 'Wolfenbüttel, Germany'
 from: '2010'
 to: '2011'
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+In addition to my job at Siemens, I started studying media informatics. Unfortunately, I realized very quickly that the course contained hardly any knowledge worth mentioning that I did not already know from my training as a computer science expert. So I took everything that was relevant to me with me, such as the media design courses. I also learned the programming language JAVA for two semesters.
