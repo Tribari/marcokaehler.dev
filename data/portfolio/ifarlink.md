@@ -2,7 +2,7 @@
 title: 'IFarlink - Aerospace Social Network'
 metaTitle: 'Project IFARlink'
 metaDescription: 'IFARlink is a network for IFAR members and associated universities in aviation research.'
-metaKeywords: 'IFARlink, Project description, Development'
+metaKeywords: 'Joomla Development, Joomla Plugin-Development, Joomla Template-Development, PHP Development'
 imageUrl: '/images/ifarlink.jpeg'
 introduction: 'IFARlink is a network for IFAR members and associated universities in aviation research.'
 url: 'https://www.ifarlink.aero/'

@@ -110,7 +110,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -205,6 +205,14 @@
                         "production": true,
                         "upToDate": true
                     }
+                },
+                {
+                    "title": "HUGO - static site generator",
+                    "knowledge": {
+                        "level": 2,
+                        "production": false,
+                        "upToDate": false
+                    }
                 }
             ]
         },
@@ -216,7 +224,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -224,7 +232,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -256,7 +264,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": true,
-                        "upToDate": false
+                        "upToDate": true
                     }
                 }
             ]
@@ -354,7 +362,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -362,7 +370,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -431,7 +439,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": false,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {

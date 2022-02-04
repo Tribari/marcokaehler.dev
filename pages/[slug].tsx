@@ -17,7 +17,7 @@ type Props = {
 
 const Page: NextPage<Props> = ({content, title, metaTitle, metaDescription, metaKeywords, imageUrl}) => {
   return (
-    <div>
+    <>
         <Head>
             <title>{metaTitle}</title>
             <meta name="description" content={metaDescription}/>
@@ -32,13 +32,13 @@ const Page: NextPage<Props> = ({content, title, metaTitle, metaDescription, meta
             </div>
         }
 
-        <h1 className="text-6xl font-light uppercase tracking-widest text-center text-transparent bg-clip-text bg-gradient-to-b from-fuchsia-600 to-teal-400 transition-colors">
-            {title}
-        </h1>
-        <div className="my-2 text-fuchsia-800 dark:text-teal-500 transition-colors">
-            <div className="markdown" dangerouslySetInnerHTML={{ __html: content }}/>
-        </div>
-    </div>
+        <main id="about" className="lg:px-16 xl:px-80">
+            <h1 className="text-center my-12 border-b-2 border-slate-100 dark:border-slate-800">
+                {title}
+            </h1>
+            <div className="markdown jost" dangerouslySetInnerHTML={{ __html: content }}/>
+        </main>
+    </>
   )
 }
 
@@ -48,7 +48,7 @@ export const getStaticProps: GetStaticProps = async ({params}: any) => {
     return {
         props: {
             content: result.toString(),
-            title: '>>' + page.data.title + '<<',
+            title: page.data.title,
             description: "",
             metaTitle: (page.data.metaTitle ? page.data.metaTitle : page.data.title) + ' | ' + generalData.meta_title,
             metaDescription: page.data.metaDescription,

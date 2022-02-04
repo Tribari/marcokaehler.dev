@@ -30,7 +30,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                 <div className="container mx-auto font-vt323 text-xl text-slate-900 dark:text-white bg-white dark:bg-black transition-colors">
                     
                     <header className="sticky top-0 z-10 grid lg:grid-cols-2 py-6 px-12 bg-white dark:bg-black transition-colors">
-                        <div className="uppercase group transition-colors hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
+                        <div className="uppercase group ">
                             <div className="text-5xl">
                                 <Link href="/">
                                     {siteTitle}
@@ -47,7 +47,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                             <div className="inline lg:pr-4 text-3xl uppercase tracking-wide">
                                 {mainMenu && mainMenu.map((item, index) => {
                                     return (
-                                        <span key={index} className="pr-4 transition-colors hover:text-fuchsia-700 active:text-teal-500 dark:hover:text-teal-500 dark:active:text-fuchsia-600">
+                                        <span key={index} className="pr-4">
                                             <Link href={item.url}>
                                                 {item.title}
                                             </Link>
@@ -65,7 +65,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
 
                     <footer className="py-4 px-12 text-md text-center uppercase bg-white dark:bg-black transition-colors">
                         <span className="mx-4">
-                            ©{currentYear} - <Link href="/">{siteTitle}</Link> - <Link href="/imprint">Imprint</Link> - <Link href="/privacy">Privacy</Link>
+                            ©{currentYear} - <Link href="/">{siteTitle}</Link> - <Link href="/legal-notice">Legal Notice</Link> - <Link href="/privacy-policy">Privacy Policy</Link>
                         </span>
                     </footer>
 

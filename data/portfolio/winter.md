@@ -1,10 +1,10 @@
 ---
 title: 'Storemanagement Trainer C. Winter'
 metaTitle: 'Projekt Storemanagement Trainer Christoph Winter'
-metaDescription: ''
-metaKeywords: ''
+metaDescription: 'A complete corporate design was created for Mr. Christoph Winter, store management trainer.'
+metaKeywords: 'Graphic Design, Print Design, Consulting, Corporate Design Development'
 imageUrl: '/images/winter.jpeg'
-introduction: 'A complete corporate design was created for Mr. Christoph Winter, store management trainer. '
+introduction: 'A complete corporate design was created for Mr. Christoph Winter, store management trainer.'
 url: 'https://der-storemanagement-trainer.de/'
 gallery: '/images/winter/'
 ---

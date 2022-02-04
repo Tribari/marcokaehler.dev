@@ -1,8 +1,8 @@
 ---
 title: 'Website for secondary school Vorsfelde'
 metaTitle: 'Website for secondary school Vorsfelde'
-metaDescription: ''
-metaKeywords: ''
+metaDescription: 'The secondary school in Wolfsburg City Vorsfelde needed a refresh of their existing webpage.'
+metaKeywords: 'Joomla Development, Joomla Template-Development'
 imageUrl: '/images/rs-vorsfelde.jpg'
 introduction: 'The secondary school in Wolfsburg City Vorsfelde needed a refresh of their existing webpage.'
 url: 'https://rs-vorsfelde.de/'

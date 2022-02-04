@@ -1,8 +1,8 @@
 ---
 title: 'Member Management Platform - BWG Brunswick'
 metaTitle: 'BWG Member Management Platform'
-metaDescription: ''
-metaKeywords: ''
+metaDescription: 'A member management platform for the BWG in lower saxony based on the PHP Laravel Framework and a MySql database.'
+metaKeywords: 'PHP Development, Laravel Development, UX-Design'
 imageUrl: '/images/bwg-nds.jpg'
 introduction: 'A member management platform for the BWG in lower saxony based on the PHP Laravel Framework and a MySql database.'
 url: 'http://bwg-nds.de/'

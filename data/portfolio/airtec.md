@@ -1,8 +1,8 @@
 ---
 title: 'Airtec Call for abstracts'
 metaTitle: 'Airtec Call for abstracts'
-metaDescription: ''
-metaKeywords: ''
+metaDescription: 'On behalf of the airtec congress an abstract submission form was created.'
+metaKeywords: 'PHP Development, Export of data in excel'
 imageUrl: '/images/airtec/airtec.png'
 introduction: 'On behalf of the airtec congress an abstract submission form was created.'
 url: 'https://airtec.aero/'
