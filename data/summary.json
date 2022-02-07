@@ -1,0 +1,89 @@
+{
+    "title": "Marco Kähler at a glance",
+    "birthday": "1983-12-11",
+    "status": {
+        "available": true,
+        "data": [
+            "for hire in part time (60%)",
+            "for your next project"
+        ]
+    },
+    "portrait": {
+        "url": "",
+        "title": "Marco Kähler"
+    },
+    "informations": [
+        {
+            "title": "Profession",
+            "data": [
+                "Frontend & Web Developer",
+                "Web & Graphic Designer",
+                "Partner at Internet Agency Kähler (society under civil law)"
+            ]
+        },
+        {
+            "title": "Education",
+            "data": [
+               "Computer Science Expert for Software Development (IHK)",
+               "Media Informatics (2 semesters at university of applied science)"
+            ]
+        },
+        {
+            "title": "Experience",
+            "data": [
+               "More than 10 years of experience in different fields"
+            ]
+        },
+        {
+            "title": "Skillset",
+            "data": [
+                "NEXT.js Development (TypeScript, React.js, Node.js, Prisma ORM, PSQL-DB)",
+                "PHP Development (Vanilla PHP, Laravel, MySQL-DB, MongoDB)",
+                "CMS Development (Wordpress, Joomla, OctoberCMS, Strapi)",
+                "HTML Development (SCSS, Bootstrap-CSS, Tailwind-CSS, JQuery, Vanilla JS)",
+                "Mobile App Development Android & iOS (C#, Xamarin-Framework)",
+                "Consulting (Analysis and advice on feasibility, costs and effort)",
+                "Graphic Design (Photoshop, Illustrator, InDesign, XD)"
+            ]
+        },
+        {
+            "title": "Spoken languages",
+            "data": [
+                "German (native), English"
+            ]
+        },
+        {
+            "title": "Location",
+            "data": [
+                "City of Hanover, Lower Saxony, Germany"
+            ]
+        }
+    ],
+    "buttons": [
+        {
+            "text": "Hire me",
+            "class": "button-green",
+            "url": "mailto:contact@marcokaehler.dev"
+        },
+        {
+            "text": "About myself",
+            "class": "button-blue",
+            "url": "/#about"
+        },
+        {
+            "text": "My Skills",
+            "class": "button-yellow",
+            "url": "/#skills"
+        },
+        {
+            "text": "Career",
+            "class": "button-red",
+            "url": "/#career"
+        },
+        {
+            "text": "Portfolio",
+            "class": "button-purple",
+            "url": "/#portfolio"
+        }
+    ]
+}
