@@ -1,5 +1,5 @@
 ---
-position: 'Apprenticeship - CS Expert for Software Development (IHK)'
+position: 'Apprenticeship - CS Expert for Software Dev. (IHK)'
 type: 'Full time Trainee'
 company: 'Siemens AG'
 location: 'Brunswick, Germany'

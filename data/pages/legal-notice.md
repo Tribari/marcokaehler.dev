@@ -19,6 +19,7 @@ Email: contact [at] marcokaehler.dev
 * Font Jost under Open Font License <https://fonts.google.com/specimen/Jost>
 * FontAwesome Free under Font Awesome Free License <https://fontawesome.com/>
 * Mac OS mockup by Zan Ilic: <https://creativemarket.com/zanilic>
+* Illustrations from Katerina Limpitsouni <https://undraw.co/illustrations>
 
 #### This legal notice also applies to the following social media profiles
 XING: <https://www.xing.com/profile/Marco_Kaehler2/>

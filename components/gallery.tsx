@@ -48,7 +48,7 @@ const GalleryComponent = ({images}: Props) => {
         return (
             <div key={index} className="relative flex-none w-1/2 md:w-1/4 lg:w-1/2 xl:w-1/4 cursor-pointer" onClick={() => showImage()}>
                 <div className="relative h-40 sm:h-60 md:h-40 lg:h-44 xl:h-28">
-                    <Image src={image} alt="" layout="fill" objectFit="cover" loading="eager" priority/>
+                    <Image src={image} alt="" layout="fill" objectFit="cover" loading="lazy"/>
                 </div>
                 <div className="absolute inset-0 align-middle text-center bg-lime-200 dark:bg-lime-700 opacity-0 hover:opacity-90 transition-opacity duration-500">
                     <FaPlusCircle className="m-auto h-full"/>
@@ -69,7 +69,7 @@ const GalleryComponent = ({images}: Props) => {
                     <div className="fixed z-30 inset-0 bg-black dark:bg-slate-900 opacity-90"></div>
                     <div className="fixed z-40 inset-4 lg:inset-10 bg-black">
                         {image &&
-                            <Image src={image} alt="" layout="fill" objectFit="contain" loading="eager" priority/>
+                            <Image src={image} alt="" layout="fill" objectFit="contain" loading="lazy"/>
                         }
                     </div>
                     <div className="fixed z-50 inset-10 text-right flex flex-col">

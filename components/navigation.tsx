@@ -39,7 +39,7 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
                     {contact.mail && 
                         <span className="pr-4">
                             <Link href={contact.mail}>
-                                <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <a aria-label="Mail" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
                                     <FaEnvelope className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                                 </a>
                             </Link>
@@ -48,7 +48,7 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
                     {contact.xing && 
                         <span className="pr-4">
                             <Link href={contact.xing}>
-                                <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <a aria-label="Xing" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
                                     <FaXing className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                                 </a>
                             </Link>
@@ -57,7 +57,7 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
                     {contact.linkedin && 
                         <span className="pr-4">
                             <Link href={contact.linkedin}>
-                                <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <a aria-label="LinkedIn" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
                                     <FaLinkedin className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                                 </a>
                             </Link>
@@ -66,7 +66,7 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
                     {contact.github && 
                         <span className="">
                             <Link href={contact.github}>
-                                <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <a aria-label="Github" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
                                     <FaGithub className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                                 </a>
                             </Link>
@@ -80,7 +80,7 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
     const mobileNavigation = (
         <div className="visible xl:invisible block xl:hidden">
             <div className="">
-                <button name="openMenu" className={open ? 'hamburger open' : 'hamburger'} type="button" onClick={toggleOpen}>
+                <button name="openMenu" aria-label="Open Menu" className={open ? 'hamburger open' : 'hamburger'} type="button" onClick={toggleOpen}>
                     <span className="hamburger_top-bun"></span>
                     <span className="hamburger_bottom-bun"></span>
                 </button>
@@ -114,19 +114,19 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
 
     return (
         <div className="flex flex-row">
-            <div className="flex-none uppercase group">
-                <div className="pt-4 text-5xl">
+            <div className="flex-auto uppercase group">
+                <div className="pt-4 text-3xl md:text-5xl">
                     <Link href="/">
                         {siteTitle}
                     </Link>
                 </div>
-                <div className="text-xl xl:text-2xl">
+                <div className="text-sm md:text-xl xl:text-2xl">
                     <Link href="/">
                         {siteSlogan}
                     </Link>
                 </div>
             </div>
-            <div className="flex-auto text-right pt-4 xl:pt-0">
+            <div className="flex-none text-right pt-4 xl:pt-0">
                 {desktopNavigation}
                 {mobileNavigation}
             </div>

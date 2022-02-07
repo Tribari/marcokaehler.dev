@@ -24,11 +24,11 @@ const PortfolioComponent = ({portfolio}: Props) => {
 
     const items = portfolio.map((item, index) => {
         return (
-            <div key={index} className="p-4 w-full md:w-1/2">
+            <div key={index} className="p-4 w-full md:w-1/2 lg:w-1/3">
                 <div className="flex relative shadow hover:shadow-xl">
                     <div className="relative w-full h-64 bg-gray-200 dark:bg-gray-700">
                         {item.data.imageUrl &&
-                            <Image src={item.data.imageUrl} alt={item.data.title} layout="fill" objectFit="cover" loading="eager" priority/>
+                            <Image src={item.data.imageUrl} alt={item.data.title} layout="fill" objectFit="cover" loading="lazy"/>
                         }
                     </div>
                     <div className="p-4 absolute inset-0 bg-lime-200 dark:bg-lime-700 opacity-0 hover:opacity-90 transition-opacity duration-500">
@@ -51,7 +51,7 @@ const PortfolioComponent = ({portfolio}: Props) => {
 
     return (
         <>
-            <h2 className="text-center">Portfolio</h2>
+            <h2 className="text-center border-b-2">Portfolio (selection)</h2>
             <div className="mt-8 flex flex-row flex-wrap -m-4">
                 {items}
             </div>

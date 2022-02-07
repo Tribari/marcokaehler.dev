@@ -3,16 +3,17 @@ import SkillsComponent, {Skills} from '@/components/skills'
 import AboutComponent, {About} from '@/components/about'
 import CareerComponent, {Career} from '@/components/career'
 import PortfolioComponent, { Portfolio } from '@/components/portfolio'
-import LaunchIcon from '@/components/icons/launch'
+import CTAComponent from '@/components/cta'
+import { ComputerDesktopIcon, ComputerHeadsetIcon, HelloIcon } from '@/components/icons'
 import { getAllPortfolio } from '@/lib/portfolio'
 import { getAllCareer } from '@/lib/career'
 import { getAllAbout } from '@/lib/about'
 import type { NextPage, GetStaticProps } from 'next'
+import Image from  'next/image'
 import Head from 'next/head'
 import generalData from '@/data/general.json'
 import summaryData from '@/data/summary.json'
 import skillsData from '@/data/skills.json'
-
 
 type Props = {
   metaTitle: string,
@@ -25,33 +26,66 @@ type Props = {
 
 const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career, portfolio}: Props) => {
   return (
-    <div>
+    <div className="frontpage">
         <Head>
             <title>{metaTitle}</title>
         </Head>
 
-        <section className="lg:pb-16 xl:pb-24 grid grid-cols-1 xl:grid-cols-3 lg:gap-24">
-          <div className="flex flex-col justify-center ">
-              <LaunchIcon/>
+        <section id="summary">
+          <div className="grid lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-1 text-center lg:pt-24 ">
+              <div className="p-4 xl:p-0 max-w-xs mx-auto">
+                <Image src="/images/portrait.jpg" width={360} height={360} layout="responsive" objectFit="cover" priority className="rounded-full"/>
+              </div>
+            </div>
+            <div className="lg:col-span-2">
+              <SummaryComponent summary={summary}/>
+            </div>
           </div>
-          <div className="lg:col-span-2">
-            <SummaryComponent summary={summary}/>
+        </section>
+
+        <CTAComponent title="Available part-time as an employee or external!" buttonHref={generalData.contact.mail} />
+
+        <section id="about">
+          <div className="grid lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-1 text-center lg:pt-20">
+              <HelloIcon/>
+            </div>
+            <div className="lg:col-span-2 ">
+              <AboutComponent about={about}/>
+            </div>
           </div>
         </section>
 
-        <section id="about" className="py-36 lg:px-16 xl:px-80">
-          <AboutComponent about={about}/>
+        <CTAComponent title="Would you like to get to know me?" buttonHref={generalData.contact.mail} />
+
+        <section id="skills">
+          <div className="grid lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-1 text-center lg:pt-20">
+              <ComputerHeadsetIcon/>
+            </div>
+            <div className="lg:col-span-2 ">
+              <SkillsComponent skills={skills}/>
+            </div>
+          </div>
         </section>
 
-        <section id="skills" className="py-36 lg:px-16 xl:px-80">
-          <SkillsComponent skills={skills}/>
+        <CTAComponent title="I am an all-rounder and open to new things!" buttonHref={generalData.contact.mail} />
+
+        <section id="career">
+          <div className="grid lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-1 text-center lg:pt-24">
+              <ComputerDesktopIcon/>
+            </div>
+            <div className="lg:col-span-2">
+              <CareerComponent career={career}/>
+            </div>
+          </div>
         </section>
 
-        <section id="career" className="py-36 lg:px-16 xl:px-80">
-          <CareerComponent career={career}/>
-        </section>
+        <CTAComponent title="My experience for your success!" buttonHref={generalData.contact.mail} />
 
-        <section id="portfolio" className="py-36 lg:px-16 xl:px-80">
+        <section id="portfolio">
           <PortfolioComponent portfolio={portfolio}/>
         </section>
     </div>

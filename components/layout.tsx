@@ -35,7 +35,7 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
             </Head>
             <div className="min-h-screen bg-gradient-to-tr from-blue-400 to-slate-100 dark:from-blue-900 dark:to-slate-800 transition-colors">
                 <div className="container mx-auto font-vt323 text-xl text-slate-900 dark:text-white bg-white dark:bg-black transition-colors">
-                    <header className="sticky top-0 z-10 p-4 lg:py-6 lg:px-12 bg-white dark:bg-black transition-colors">
+                    <header className="sticky top-0 z-10 px-4 lg:py-6 lg:px-12 bg-white dark:bg-black transition-colors border-b">
                         <NavigationComponent siteTitle={siteTitle} siteSlogan={siteSlogan} mainMenu={mainMenu} contact={contact} />
                     </header>
                     <main className="p-4 xl:p-12">

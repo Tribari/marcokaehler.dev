@@ -14,7 +14,7 @@ type Props = {
 const SkillsComponent = ({skills}: Props) => {
     const groups = skills.groups.map((group, index) => {
         return(
-            <SkillGroupComponent key={index} title={group.title} skills={group.skills}/>
+            <SkillGroupComponent key={index} title={group.title} skills={group.skills} opened={index === 0 ? true : false} />
         )
     })
 
