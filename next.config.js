@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
+const withOptimizedImages = require('next-optimized-images')
+
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
@@ -9,4 +10,5 @@ const nextConfig = {
   assetPrefix: isProd ? '/marcokaehler.dev/' : ''
 }
 
-module.exports = nextConfig
+module.exports = withOptimizedImages(
+nextConfig)
