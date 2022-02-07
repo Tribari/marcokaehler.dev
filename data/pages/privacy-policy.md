@@ -3,15 +3,15 @@ title: 'Privacy Policy'
 metaTitle: 'Privacy Policy'
 metaDescription: ''
 metaKeywords: ''
-imageUrl: '/images/alex-knight--4pZ_YqcSFc-unsplash.jpg'
+imageUrl: ''
 ---
-### Respinsible Authority
+### Responsible Authority
 Marco Kähler\
 Tintentrift 6\
 30177 Hannover, Germany
 
 Phone: +49 (0) 511 26 05 22 71\
-Email: <mail@iconxtreme.net>
+Email: contact [at] marcokaehler.dev
 
 ### Preamble
 At this website, accessible from www.iconxtreme.net, one of my main priorities is the privacy of my visitors. This Privacy Policy document contains types of information that is collected and recorded by this website and also how I use it.

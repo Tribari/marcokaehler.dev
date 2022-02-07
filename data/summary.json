@@ -63,27 +63,27 @@
         {
             "text": "Hire me",
             "class": "button-green",
-            "url": "#"
+            "url": "mailto:contact@marcokaehler.dev"
         },
         {
-            "text": "Download CV",
+            "text": "About myself",
             "class": "button-blue",
-            "url": "#"
+            "url": "/#about"
         },
         {
             "text": "My Skills",
             "class": "button-yellow",
-            "url": "#"
+            "url": "/#skills"
+        },
+        {
+            "text": "Career",
+            "class": "button-red",
+            "url": "/#career"
         },
         {
             "text": "Portfolio",
-            "class": "button-red",
-            "url": "#"
-        },
-        {
-            "text": "About me",
             "class": "button-purple",
-            "url": "#"
+            "url": "/#portfolio"
         }
     ]
 }

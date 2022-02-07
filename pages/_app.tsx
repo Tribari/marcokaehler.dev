@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         metaDescription={generalData.meta_description}
         metaKeywords={generalData.meta_keywords}
         mainMenu={mainMenuData}
+        contact={generalData.contact}
         >
         <Component {...pageProps} />
       </LayoutComponent>

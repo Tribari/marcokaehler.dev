@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import ThemeChangerComponent from './themechanger'
+import { FaEnvelope, FaGithub, FaXing, FaLinkedin } from "react-icons/fa"
 
 type Props = {
     children: React.ReactNode,
@@ -9,10 +10,16 @@ type Props = {
     metaTitle: string,
     metaDescription: string,
     metaKeywords: string,
-    mainMenu: {title: string, url: string}[]
+    mainMenu: {title: string, url: string}[],
+    contact?: {
+        mail?: string,
+        xing?: string,
+        linkedin?: string,
+        github?: string
+    }
 }
 
-export default function LayoutComponent({ children, siteTitle, siteSlogan, metaTitle, metaDescription, metaKeywords, mainMenu }: Props) {
+export default function LayoutComponent({ children, siteTitle, siteSlogan, metaTitle, metaDescription, metaKeywords, mainMenu, contact }: Props) {
     const currentYear = new Date().getFullYear() 
 
     return (
@@ -30,8 +37,8 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                 <div className="container mx-auto font-vt323 text-xl text-slate-900 dark:text-white bg-white dark:bg-black transition-colors">
                     
                     <header className="sticky top-0 z-10 grid lg:grid-cols-2 py-6 px-12 bg-white dark:bg-black transition-colors">
-                        <div className="uppercase group ">
-                            <div className="text-5xl">
+                        <div className="uppercase group">
+                            <div className="pt-4 text-5xl">
                                 <Link href="/">
                                     {siteTitle}
                                 </Link>
@@ -43,8 +50,10 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                             </div>
                         </div>
 
-                        <div className="lg:text-right lg:pt-3">
-                            <div className="inline lg:pr-4 text-3xl uppercase tracking-wide">
+                        <div className="lg:text-right">
+                            <ThemeChangerComponent/>
+
+                            <div className="pt-4 pr-1 text-3xl uppercase tracking-wide">
                                 {mainMenu && mainMenu.map((item, index) => {
                                     return (
                                         <span key={index} className="pr-4">
@@ -54,8 +63,47 @@ export default function LayoutComponent({ children, siteTitle, siteSlogan, metaT
                                         </span>
                                     )
                                 })}
+                                {contact && 
+                                    <div className="inline-block">
+                                        {contact.mail && 
+                                            <span className="pr-4">
+                                                <Link href={contact.mail}>
+                                                    <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                                        <FaEnvelope className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
+                                                    </a>
+                                                </Link>
+                                            </span>
+                                        }
+                                        {contact.xing && 
+                                            <span className="pr-4">
+                                                <Link href={contact.xing}>
+                                                    <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                                        <FaXing className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
+                                                    </a>
+                                                </Link>
+                                            </span>
+                                        }
+                                        {contact.linkedin && 
+                                            <span className="pr-4">
+                                                <Link href={contact.linkedin}>
+                                                    <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                                        <FaLinkedin className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
+                                                    </a>
+                                                </Link>
+                                            </span>
+                                        }
+                                        {contact.github && 
+                                            <span className="">
+                                                <Link href={contact.github}>
+                                                    <a target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                                        <FaGithub className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
+                                                    </a>
+                                                </Link>
+                                            </span>
+                                        }
+                                    </div>
+                                }
                             </div>
-                            <ThemeChangerComponent/>
                         </div>
                     </header>
                     
