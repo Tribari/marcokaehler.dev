@@ -125,3 +125,40 @@ a:hover {
 .Typewriter {
     @apply inline
 }
+
+.hamburger {
+    @apply inline-block m-auto focus:outline-none cursor-pointer w-16 h-16 transition-all duration-200
+}
+
+.hamburger_top-bun,
+.hamburger_bottom-bun {
+    @apply absolute w-8 h-1 rotate-0 transition-all duration-300 bg-black dark:bg-white -translate-x-4
+}
+
+.hamburger_top-bun {
+    @apply -translate-y-1
+}
+
+.hamburger_bottom-bun {
+    @apply translate-y-1
+}
+
+.hamburger.open {
+    @apply -translate-y-0 translate-x-0 rotate-90
+}
+
+.hamburger.open .hamburger_top-bun {
+    @apply rotate-45 translate-y-0
+}
+
+.hamburger.open .hamburger_bottom-bun {
+    @apply -rotate-45 translate-y-0
+}
+
+.mobilemenu {
+    @apply fixed bottom-0 left-0 right-0 h-0 transition-all delay-200 duration-500 bg-white dark:bg-black border-t shadow-2xl
+}
+
+.mobilemenu.open {
+    @apply fixed h-3/4 
+}
