@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "private": true,
+  "name": "marcokaehler.dev",
+  "private": false,
+  "homepage": "https://github.com/Tribari/marcokaehler.dev",
   "scripts": {
     "dev": "next dev",
     "export": "next export",
