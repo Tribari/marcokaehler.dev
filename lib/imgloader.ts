@@ -1,4 +1,4 @@
-const imageLoader = ({src, width, quality}:{src: string, width: number, quality: number}): string => {
+const imageLoader = ({src, quality, width}:any): any => {
     return `${src}?w=${width}&q=${quality || 75}`
 }
 
