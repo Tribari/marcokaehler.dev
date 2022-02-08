@@ -30,7 +30,7 @@ const AboutComponent = ({about}: Props) => {
                             />
                     </span>
                 </h3>
-                <div className="markdown jost text-justify">
+                <div className="markdown jost ">
                     <div dangerouslySetInnerHTML={{ __html: block.content }} />
                     {block.data.quote &&
                         <blockquote>{block.data.quote}</blockquote>

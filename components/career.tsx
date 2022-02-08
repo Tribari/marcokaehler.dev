@@ -30,7 +30,7 @@ const CareerComponent = ({career}: Props) => {
                 <p className="md:ml-52 py-2 font-jost font-bold text-base ">
                     {step.data.type} @ {step.data.company} - {step.data.location}
                 </p>
-                <p className="md:ml-52 jost text-justify">
+                <p className="md:ml-52 jost">
                     {step.content}
                 </p>
 
