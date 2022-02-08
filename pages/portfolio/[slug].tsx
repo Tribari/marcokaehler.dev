@@ -8,7 +8,7 @@ import html from 'remark-html'
 import { FaExternalLinkAlt } from "react-icons/fa"
 import generalData from '@/data/general.json'
 import GalleryComponent from '@/components/gallery'
-
+import imageLoader from '@/lib/imgloader'
 
 type Props = {
     content: string,
@@ -38,7 +38,7 @@ const Portfolio: NextPage<Props> = ({content, title, url, metaTitle, metaDescrip
             <div className="lg:p-4 mt-4 w-full lg:w-1/3">
                 {imageUrl &&
                     <div className="relative w-full h-80 lg:h-40 xl:h-80">
-                        <Image src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
+                        <Image loader={imageLoader} src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
                     </div>
                 }
                 {images && 
