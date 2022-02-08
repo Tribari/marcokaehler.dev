@@ -55,21 +55,21 @@ const SummaryComponent = ({summary}: Props) => {
                     {summary.title} 
                 </h2>
                 <div className="py-4">
-                    <div className="my-2 grid grid-cols-4">
+                    <div className="my-2 grid md:grid-cols-4">
                         <div className="uppercase">
                             Age
                         </div>
-                        <div className="col-span-3 jost">
+                        <div className="md:col-span-3 jost">
                             {age} years and counting
                         </div>
                     </div>
                     {summary.informations && summary.informations.map((entry, index) => {
                         return (
-                            <div key={index} className="my-2 grid grid-cols-4">
+                            <div key={index} className="my-2 grid md:grid-cols-4">
                                 <div className="uppercase">
                                     {entry.title}
                                 </div>
-                                <div className="col-span-3 jost">
+                                <div className="md:col-span-3 jost">
                                     {entry.data.map((i, k) => {
                                         return (
                                             <p key={k}>{i}</p>
@@ -79,11 +79,11 @@ const SummaryComponent = ({summary}: Props) => {
                             </div>
                         )
                     })}
-                    <div className="my-2 grid grid-cols-4">
+                    <div className="my-2 grid md:grid-cols-4">
                         <div className="uppercase">
                             Status
                         </div>
-                        <div className="col-span-3 ">
+                        <div className="md:col-span-3 ">
                             {summary.status.available && 
                                 <span className="bg-lime-200 dark:bg-lime-700 px-2">Available</span>
                             }
