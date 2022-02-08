@@ -5,6 +5,7 @@ import {remark} from 'remark'
 import html from 'remark-html'
 import { getAllPageSlugs, getPageBySlug } from '@/lib/pages'
 import generalData from '@/data/general.json'
+import imageLoader from '@/lib/imgloader'
 
 type Props = {
     content: string,
@@ -27,7 +28,7 @@ const Page: NextPage<Props> = ({content, title, metaTitle, metaDescription, meta
         {imageUrl &&
             <div className="-m-12 mb-12">
                 <div className="relative w-full h-80">
-                    <Image src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
+                    <Image loader={imageLoader} src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority/>
                 </div>
             </div>
         }

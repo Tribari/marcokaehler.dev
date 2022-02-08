@@ -14,6 +14,7 @@ import Head from 'next/head'
 import generalData from '@/data/general.json'
 import summaryData from '@/data/summary.json'
 import skillsData from '@/data/skills.json'
+import imageLoader from '@/lib/imgloader'
 
 type Props = {
   metaTitle: string,
@@ -35,7 +36,7 @@ const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career, portf
           <div className="grid lg:grid-cols-3 gap-4">
             <div className="lg:col-span-1 text-center lg:pt-24 ">
               <div className="p-4 xl:p-0 max-w-xs mx-auto">
-                <Image alt={generalData.site_title} src="/images/portrait.jpg" width={360} height={360} layout="responsive" objectFit="cover" priority className="rounded-full"/>
+                <Image loader={imageLoader} alt={generalData.site_title} src="/images/portrait.jpg" width={360} height={360} layout="responsive" objectFit="cover" priority className="rounded-full"/>
               </div>
             </div>
             <div className="lg:col-span-2">

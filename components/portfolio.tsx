@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaAngleRight } from "react-icons/fa"
+import imageLoader from '@/lib/imgloader'
 
 export type Portfolio = {
     slug: string,
@@ -28,7 +29,7 @@ const PortfolioComponent = ({portfolio}: Props) => {
                 <div className="flex relative shadow hover:shadow-xl">
                     <div className="relative w-full h-64 bg-gray-200 dark:bg-gray-700">
                         {item.data.imageUrl &&
-                            <Image src={item.data.imageUrl} alt={item.data.title} layout="fill" objectFit="cover" loading="lazy"/>
+                            <Image loader={imageLoader} src={item.data.imageUrl} alt={item.data.title} layout="fill" objectFit="cover" loading="lazy"/>
                         }
                     </div>
                     <div className="p-4 absolute inset-0 bg-lime-200 dark:bg-lime-700 opacity-0 hover:opacity-90 transition-opacity duration-500">
