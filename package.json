@@ -1,6 +1,6 @@
 {
   "name": "marcokaehler.dev",
-  "private": false,
+  "private": true,
   "homepage": "https://github.com/Tribari/marcokaehler.dev",
   "scripts": {
     "dev": "next dev",
