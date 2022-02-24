@@ -101,7 +101,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 
   return {
       props: {
-          metaTitle: 'Home | ' + generalData.meta_title,
+          metaTitle: generalData.meta_title + ' | Frontend- & Web Developer',
           summary: summaryData,
           skills: skillsData,
           about: about,
