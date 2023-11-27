@@ -38,37 +38,29 @@ const NavigationComponent = ({siteTitle, siteSlogan, mainMenu, contact}: Props) 
                 <div className="inline-block">
                     {contact.mail && 
                         <span className="pr-4">
-                            <Link href={contact.mail}>
-                                <a aria-label="Mail" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
-                                    <FaEnvelope className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
-                                </a>
+                            <Link href={contact.mail} aria-label="Mail" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <FaEnvelope className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                             </Link>
                         </span>
                     }
                     {contact.xing && 
                         <span className="pr-4">
-                            <Link href={contact.xing}>
-                                <a aria-label="Xing" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
-                                    <FaXing className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
-                                </a>
+                            <Link href={contact.xing} aria-label="Xing" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <FaXing className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                             </Link>
                         </span>
                     }
                     {contact.linkedin && 
                         <span className="pr-4">
-                            <Link href={contact.linkedin}>
-                                <a aria-label="LinkedIn" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
-                                    <FaLinkedin className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
-                                </a>
+                            <Link href={contact.linkedin} aria-label="LinkedIn" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <FaLinkedin className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                             </Link>
                         </span>
                     }
                     {contact.github && 
                         <span className="">
-                            <Link href={contact.github}>
-                                <a aria-label="Github" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
-                                    <FaGithub className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
-                                </a>
+                            <Link href={contact.github} aria-label="Github" target="_blank" rel="noreferrer" className="hover:bg-white dark:hover:bg-black">
+                                <FaGithub className="inline-block cursor-pointer hover:text-lime-300 dark:hover:text-lime-700"/>
                             </Link>
                         </span>
                     }
