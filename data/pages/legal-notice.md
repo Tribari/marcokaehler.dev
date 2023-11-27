@@ -8,10 +8,10 @@ imageUrl: ''
 
 ### Responsible according to §5 TMG
 Marco Kähler\
-Tintentrift 6\
-30177 Hannover, Germany
+Raoul-Wallenberg-Str. 26\
+12679 Berlin, Germany
 
-Phone: +49 (0) 511 26 05 22 71\
+Phone: +49 one seven six four one five two nine six one seven\
 Email: contact [at] marcokaehler.dev
 
 #### Copyright for images & resources
