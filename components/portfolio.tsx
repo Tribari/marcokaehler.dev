@@ -50,7 +50,7 @@ const PortfolioComponent = ({portfolio}: Props) => {
 
     return (
         <>
-            <h2 className="text-center border-b-2">Portfolio (selection)</h2>
+            <h2 className="text-center border-b-2">Portfolio (selection) - Alphabetical order</h2>
             <div className="mt-8 flex flex-row flex-wrap -m-4">
                 {items}
             </div>

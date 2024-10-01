@@ -40,7 +40,7 @@
                     "title": "Node.js",
                     "knowledge": {
                         "level": 3,
-                        "production": false,
+                        "production": true,
                         "upToDate": true
                     }
                 },
@@ -55,7 +55,7 @@
                 {
                     "title": "Prisma ORM",
                     "knowledge": {
-                        "level": 2,
+                        "level": 3,
                         "production": false,
                         "upToDate": true
                     }
@@ -87,7 +87,7 @@
                 {
                     "title": "Markdown - Markup Language",
                     "knowledge": {
-                        "level": 4,
+                        "level": 3,
                         "production": true,
                         "upToDate": true
                     }
@@ -100,7 +100,7 @@
                 {
                     "title": "PHP",
                     "knowledge": {
-                        "level": 4,
+                        "level": 3,
                         "production": true,
                         "upToDate": true
                     }
@@ -187,13 +187,13 @@
                     "knowledge": {
                         "level": 5,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
                     "title": "Uikit - CSS Framework",
                     "knowledge": {
-                        "level": 4,
+                        "level": 3,
                         "production": true,
                         "upToDate": false
                     }
@@ -209,7 +209,7 @@
                 {
                     "title": "HUGO - static site generator",
                     "knowledge": {
-                        "level": 2,
+                        "level": 1,
                         "production": false,
                         "upToDate": false
                     }
@@ -264,7 +264,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 }
             ]
@@ -299,7 +299,7 @@
                 {
                     "title": "Joomla - Installation & Administration",
                     "knowledge": {
-                        "level": 5,
+                        "level": 4,
                         "production": true,
                         "upToDate": true
                     }
@@ -341,7 +341,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": false,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -349,7 +349,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": false,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 }
             ]
