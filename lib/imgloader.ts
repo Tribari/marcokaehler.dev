@@ -3,5 +3,3 @@ const imageLoader = ({src, quality, width}:any): any => {
 }
 
 export default imageLoader
-  
-module.exports = imageLoader
