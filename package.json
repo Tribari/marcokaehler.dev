@@ -12,24 +12,24 @@
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "^14.0.3",
-    "next-themes": "^0.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.12.0",
+    "next-themes": "^0.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "^5.3.0",
     "react-spring": "^9.7.3",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.5",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/node": "20.10.0",
-    "@types/react": "18.2.38",
+    "@types/node": "22.7.4",
+    "@types/react": "18.3.10",
     "autoprefixer": "^10.4.16",
-    "eslint": "8.54.0",
-    "eslint-config-next": "14.0.3",
+    "eslint": "9.11.1",
+    "eslint-config-next": "14.2.13",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
-    "typescript": "5.3.2"
+    "typescript": "5.6.2"
   }
 }

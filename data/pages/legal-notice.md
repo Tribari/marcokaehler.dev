@@ -8,8 +8,8 @@ imageUrl: ''
 
 ### Responsible according to §5 TMG
 Marco Kähler\
-Raoul-Wallenberg-Str. 26\
-12679 Berlin, Germany
+Wiltbergstr. 50, 21A\
+13125 Berlin, Germany
 
 Phone: +49 one seven six four one five two nine six one seven\
 Email: contact [at] marcokaehler.dev
