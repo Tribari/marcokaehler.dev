@@ -56,7 +56,7 @@
                     "title": "Prisma ORM",
                     "knowledge": {
                         "level": 3,
-                        "production": false,
+                        "production": true,
                         "upToDate": true
                     }
                 },
@@ -71,7 +71,7 @@
                 {
                     "title": "Mongo DB",
                     "knowledge": {
-                        "level": 2,
+                        "level": 1,
                         "production": false,
                         "upToDate": true
                     }
