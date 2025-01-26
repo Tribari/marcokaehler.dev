@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           npm i
-          npm run export
+          npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
