@@ -49,13 +49,13 @@
                     "knowledge": {
                         "level": 2,
                         "production": false,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
                     "title": "Prisma ORM",
                     "knowledge": {
-                        "level": 3,
+                        "level": 4,
                         "production": true,
                         "upToDate": true
                     }
@@ -73,7 +73,7 @@
                     "knowledge": {
                         "level": 1,
                         "production": false,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -124,7 +124,7 @@
                 {
                     "title": "Twig - PHP Template Engine",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
                         "upToDate": false
                     }
@@ -177,7 +177,7 @@
                 {
                     "title": "LESS / SASS - CSS Compiler",
                     "knowledge": {
-                        "level": 4,
+                        "level": 3,
                         "production": true,
                         "upToDate": true
                     }
@@ -185,7 +185,7 @@
                 {
                     "title": "Bootstrap - CSS Framework",
                     "knowledge": {
-                        "level": 5,
+                        "level": 4,
                         "production": true,
                         "upToDate": false
                     }
@@ -193,7 +193,7 @@
                 {
                     "title": "Uikit - CSS Framework",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
                         "upToDate": false
                     }
@@ -222,7 +222,7 @@
                 {
                     "title": "C#",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
                         "upToDate": false
                     }
@@ -230,7 +230,7 @@
                 {
                     "title": "Xamarin - C# Framework",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": true,
                         "upToDate": false
                     }
@@ -309,7 +309,7 @@
                     "knowledge": {
                         "level": 4,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -317,7 +317,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -339,7 +339,7 @@
                 {
                     "title": "Strapi - Installation & Administration",
                     "knowledge": {
-                        "level": 3,
+                        "level": 2,
                         "production": false,
                         "upToDate": false
                     }
@@ -347,7 +347,7 @@
                 {
                     "title": "Strapi - API frontend connection",
                     "knowledge": {
-                        "level": 3,
+                        "level": 1,
                         "production": false,
                         "upToDate": false
                     }
@@ -394,7 +394,7 @@
                     "knowledge": {
                         "level": 2,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -431,7 +431,7 @@
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 },
                 {
@@ -496,19 +496,11 @@
                     }
                 },
                 {
-                    "title": "Postman (API testing)",
-                    "knowledge": {
-                        "level": 4,
-                        "production": true,
-                        "upToDate": true
-                    }
-                },
-                {
                     "title": "MS Office Suite (ECDL)",
                     "knowledge": {
                         "level": 3,
                         "production": true,
-                        "upToDate": true
+                        "upToDate": false
                     }
                 }
             ]
