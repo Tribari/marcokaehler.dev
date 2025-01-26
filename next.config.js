@@ -2,7 +2,7 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   images: {
-    loader: "custom",
+    //loader: "custom",
     domains: ['marcokaehler.dev', 'tribari.github.io'],
   }
 }
