@@ -44,7 +44,6 @@ const Home: NextPage<Props> = ({metaTitle, summary, skills, about, career, portf
                   layout="responsive" 
                   objectFit="cover" 
                   priority className="rounded-full"
-                  unoptimized={true}
                 />
               </div>
             </div>
