@@ -9,7 +9,7 @@ import { getAllPortfolio } from '@/lib/portfolio'
 import { getAllCareer } from '@/lib/career'
 import { getAllAbout } from '@/lib/about'
 import type { NextPage, GetStaticProps } from 'next'
-import Image from  'next/image'
+import Image from  "next/legacy/image"
 import Head from 'next/head'
 import generalData from '@/data/general.json'
 import summaryData from '@/data/summary.json'

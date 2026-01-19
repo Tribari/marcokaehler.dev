@@ -1,7 +1,7 @@
 import { getAllPortfolioSlugs, getPortfolioBySlug } from '@/lib/portfolio'
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import {remark} from 'remark'
 import html from 'remark-html'

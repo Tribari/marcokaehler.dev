@@ -7,7 +7,7 @@ const imagesDirectory = join(process.cwd(), 'public')
 
 export function getAllPortfolioSlugs() {
     const files =  fs.readdirSync(portfolioDirectory)
-    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) )
+    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) );
 }
 
 export function getAllPortfolio() {
@@ -34,5 +34,5 @@ export function getGalleryImages(path: string) {
 }
 
 function isFileImage(file: string) {
-    return (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(file)
+    return (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(file);
 }

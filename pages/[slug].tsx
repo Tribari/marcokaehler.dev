@@ -1,6 +1,6 @@
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import {remark} from 'remark'
 import html from 'remark-html'
 import { getAllPageSlugs, getPageBySlug } from '@/lib/pages'
