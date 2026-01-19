@@ -6,7 +6,7 @@ const careerDirectory = join(process.cwd(), 'data/career')
 
 export function getAllCareerSlugs() {
     const files =  fs.readdirSync(careerDirectory)
-    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) )
+    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) );
 }
 
 export function getAllCareer() {

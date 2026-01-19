@@ -6,7 +6,7 @@ const pagesDirectory = join(process.cwd(), 'data/pages')
 
 export function getAllPageSlugs() {
     const files =  fs.readdirSync(pagesDirectory)
-    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) )
+    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) );
 }
 
 export function getPageBySlug(slug: string) {

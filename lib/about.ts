@@ -8,7 +8,7 @@ const aboutDirectory = join(process.cwd(), 'data/about')
 
 export function getAllAboutSlugs() {
     const files =  fs.readdirSync(aboutDirectory)
-    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) )
+    return files.map( (file) => (file.replace(/\.[^/.]+$/, "")) );
 }
 
 export async function getAllAbout() {

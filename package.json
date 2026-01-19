@@ -11,25 +11,25 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "^14.0.3",
+    "next": "^14.2.35",
     "next-themes": "^0.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-icons": "^5.3.0",
-    "react-spring": "^9.7.3",
+    "react-icons": "^5.5.0",
+    "react-spring": "^9.7.5",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "sharp": "^0.33.5",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@types/node": "22.7.4",
     "@types/react": "18.3.10",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.23",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
     "typescript": "5.6.2"
   }
 }
