@@ -21,6 +21,14 @@
                     }
                 },
                 {
+                    "title": "Astro - Static Site Generator Framework",
+                    "knowledge": {
+                        "level": 2,
+                        "production": true,
+                        "upToDate": true
+                    }
+                },
+                {
                     "title": "Vue.js",
                     "knowledge": {
                         "level": 1,

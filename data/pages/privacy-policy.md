@@ -11,7 +11,7 @@ Wiltbergstr. 50, 21A\
 13125 Berlin, Germany
 
 Phone: +49 one seven six four one five two nine six one seven\
-Email: contact [at] marcokaehler.dev
+Email: marco.kaehler@googlemail.com
 
 ### Preamble
 At this website, accessible from www.iconxtreme.net, one of my main priorities is the privacy of my visitors. This Privacy Policy document contains types of information that is collected and recorded by this website and also how I use it.
